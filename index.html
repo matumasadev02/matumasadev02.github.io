@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菅原先生の誕生日まで!!</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/yt.min.css">
+    <script src="./js/yt.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+</head>
+    <body id="ytPlayerWrap">
+        <div class="backvideo" id="ytPlayer" data-property="{
+            videoURL: '7Qp5vcuMIlk',　//動画IDまたはURLを記述
+            coverImage: 'http://img.youtube.com/vi/7Qp5vcuMIlk/2.jpg',
+            containment: '#ytPlayerWrap', //動画の位置(親要素)
+            autoPlay: true, //自動再生
+            loop: 1,　//ループ再生
+            mute: true, //
+            startAt: 0, //動画の再生位置
+            showControls: false, //コントロールの非表示
+            showYTLogo: false //youtubeのロゴ等を非表示
+        }"></div>
+        <section  style="font-family: 'Noto Sans JP', sans-serif;">
+            <h1 id="midashi" class="mid" style="margin: 20px;">
+                <p style="color: white;" id="title1">菅原先生の</p>
+                <a href="#title2"><div class="btn"></div></a>
+                <p style="color: white;" id="title2">誕生日まで...</p>
+                <a href="#result"><div class="btn"></div></a>
+                <div class="mid" id="result" style="color: black;" id="target"></div>
+                <a href="#title1"><div class="btn2"></div></a>
+            </h1>
+        </section>
+            <script>$("#ytPlayer").YTPlayer();</script>
+            <style>
+                .btn {
+                display:  inline-block;
+                color: #fff;
+                text-decoration:  none;
+                background-color: #2196F3;
+                border-radius: 5px;
+                position:  relative;
+                height: 50px;
+                width: 50px;
+                cursor:pointer;
+            }
+
+            .btn::before {
+                content:  '';
+                width: 20px;
+                height: 20px;
+                display:  block;
+                border-top: solid 2px;
+                border-right: solid 2px;
+                transform: rotate(135deg);
+                position:  absolute;
+                top: 0px;
+                bottom:  10px;
+                left:  0;
+                right:  0;
+                margin:  auto;
+            }
+            .btn2 {
+                display:  inline-block;
+                color: #fff;
+                text-decoration:  none;
+                background-color: #2196F3;
+                border-radius: 5px;
+                position:  relative;
+                height: 50px;
+                width: 50px;
+                cursor:pointer;
+            }
+
+            .btn2::before {
+                content:  '';
+                width: 20px;
+                height: 20px;
+                display:  block;
+                border-top: solid 2px;
+                border-right: solid 2px;
+                transform: rotate(-45deg);
+                position:  absolute;
+                top: 10px;
+                bottom:  0px;
+                left:  0;
+                right:  0;
+                margin:  auto;
+            }
+            </style>
+    </body>
+</html>

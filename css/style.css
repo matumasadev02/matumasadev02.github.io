@@ -1,0 +1,205 @@
+main{
+    z-index: 99;
+}
+header {
+    position: relative;
+    height: 20%;
+    width: 100%;
+}
+/*h1 {
+    font-family: serif;          
+    color: cornflowerblue;
+    font-size: 400%;
+    position: absolute;
+    left: 30%;
+    top: 200px;
+    z-index: 1;
+}*/
+.day{
+    text-align: center;
+}
+.birthday{
+    width: 90vw;
+}
+.emoji{
+    font-size: 3em;
+}
+
+span{
+    font-size: 2.5em;
+    color: rgb(255, 255, 255) !important;
+    margin: 2px;
+    text-shadow: 0 2px 2px #666;
+}
+/* style.css */
+
+/* 全体 */
+*{
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+body, textarea{
+font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
+background-color: #fff;
+/*color: #546e7a;*/
+}
+/* ヘッダ */
+header{
+background-color: lemonchiffon;
+/*color: #555;*/
+color: white;
+border-bottom: solid 1px #ddd;
+width: 100%;
+z-index: -100;
+}
+header h1{
+padding-top: 25px;
+padding-bottom: 25px;
+width: 100%;
+/*background-color: white;*/
+z-index: 1;
+position: absolute;
+text-align: center;
+}
+/* コンテンツ */
+div#contents{
+padding: 4em 2em;
+font-size: 20pt;
+background-color: #ffffff;
+box-shadow:  0 0 10px rgba(0, 0, 0, 0.2);
+}
+div#contents p{
+line-height: 1.7em;
+letter-spacing: .2em;
+text-align: center;
+}
+/* フッタ */
+footer{
+padding: 1em;
+font-size: 9pt;
+background-color: #fff;
+color: #ddd;
+border-top: solid 1px #ddd;
+text-align: center;
+}
+/* 残り日数部分 */
+.leftDays{
+font-size: 2.5em;
+font-weight: 900;
+color: dodgerblue;
+}
+/* リンクタグ */
+a{
+color: #ddd;
+text-decoration: none;
+}
+@media only screen and (min-width:960px){
+header h1{
+    top: 5rem;
+}
+}
+/* メディアクエリ設定 */
+@media only screen and (min-width:376px) and (max-width:960px) {
+/* tablet用のcssを記述 */
+.inline img{
+    width: 90vw !important;
+    margin: auto !important;
+}
+header h1{
+    text-align: center;
+    font-size: 16pt;
+}
+div#contents{
+    width: auto;
+    margin: 10px 10px;
+    font-size: 15pt;
+}
+footer{
+    text-align: center;
+}
+}
+
+@media screen and (max-width:375px) {
+/* スマホ用のcssを記述 */
+.inline img{
+    width: 90vw !important;
+    margin: auto !important;
+}
+body{
+    background-position: center;
+}
+header h1{
+    text-align: center;
+    font-size: 14pt;
+}
+div#contents{
+    width: auto;
+    margin: 0 0;
+    font-size: 13pt;
+}
+footer{
+    text-align: center;
+}
+}
+h3{
+text-align: center;
+margin-top: 30%;
+margin: 10%;
+}
+body{
+background-color: lemonchiffon;
+width: 100%;
+display: block;
+
+}
+/*@media(max-width: 992px){
+    .swiper-wrapper{
+        float: left;
+    }
+}
+@media(min-width: 992px){
+    .swiper-wrapper{
+      flex-wrap:wrap;
+    }
+    .swiper-slide{
+      width: 31.3%;
+    }
+    .swiper-button-prev,.swiper-button-next,.swiper-pagination{
+      display: none;
+    }
+    .swiper-slide img{
+        width: 40%;
+    }
+  }
+*/
+main{
+    float: left;
+}
+.inside{
+    display: none;
+}
+.inline img{
+    margin: auto;
+}
+div{
+    text-align: center !important;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.backvideo{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+#ytPlayerWrap{
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
