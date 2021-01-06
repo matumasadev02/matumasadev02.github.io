@@ -20,6 +20,7 @@ header {
 }
 .birthday{
     width: 90vw;
+    margin: auto;
 }
 .emoji{
     font-size: 3em;
